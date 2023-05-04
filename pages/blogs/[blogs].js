@@ -28,7 +28,7 @@ const Blogs = ({initialBlog}) => {
     useEffect(() => {
         async function fetchBlogs() {
             try {
-                const res = await fetch(process.env.NEXT_PUBLIC_URL+`/getblogs?catagorie=${blogs[0].catagorie}&page=${page}`);
+                const res = await fetch(`https://jolly-ox-robe.cyclic.app/getblogs?catagorie=${blogs[0].catagorie}&page=${page}`);
                 const newBlogs = await res.json();
                 setBlogs(prevBlogs => [...prevBlogs, ...newBlogs]);
                 setHasMore(newBlogs.length > 0);
@@ -116,7 +116,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(process.env.NEXT_PUBLIC_URL+`/getblogs?catagorie=${params.blogs}&page=1`);
+  const res = await fetch(`https://jolly-ox-robe.cyclic.app/getblogs?catagorie=${params.blogs}&page=1`);
   const initialBlog = await res.json();
   return {
     props: { initialBlog },

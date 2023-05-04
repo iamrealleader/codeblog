@@ -123,7 +123,7 @@ export default function Home({ blogs }) {
 
 export async function getStaticProps() {
   let res = await fetch(
-    process.env.NEXT_PUBLIC_URL+"/getblogs?catagorie=all&page=1",
+    "https://jolly-ox-robe.cyclic.app/getblogs?catagorie=all&page=1",
     {
       method: "GET",
       headers: {

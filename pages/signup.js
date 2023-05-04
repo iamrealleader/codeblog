@@ -20,7 +20,7 @@ const Signup = () => {
   const submitForm = async (e) =>{
       e.preventDefault();
       setLoading(true);
-      const res = await fetch(process.env.NEXT_PUBLIC_URL+'/signup', {
+      const res = await fetch("https://jolly-ox-robe.cyclic.app/signup", {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

@@ -19,7 +19,7 @@ const Contact = () => {
     setLoading(true);
 		if (mail.email && mail.subject && mail.message) {
 			try {
-				const res = await fetch(process.env.NEXT_PUBLIC_URL+`/contact`, {
+				const res = await fetch("https://jolly-ox-robe.cyclic.app/contact", {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',

@@ -30,7 +30,7 @@ const GetBlog = () => {
       },[router.isReady]);
 
       async function fetchdata (id) {
-        let req = await fetch(process.env.NEXT_PUBLIC_URL+`/getblogs?id=${id}`,{
+        let req = await fetch(`https://jolly-ox-robe.cyclic.app/getblogs?id=${id}`,{
          method : "GET",
          headers :{
            "Content-Type" : "application/json",
@@ -42,7 +42,7 @@ const GetBlog = () => {
 
      const click = async (id) => {
         setLoading(true);
-        let req = await fetch(process.env.NEXT_PUBLIC_URL+`/deleteblog`,{
+        let req = await fetch(`https://jolly-ox-robe.cyclic.app/deleteblog`,{
          method : "DELETE",
          headers :{
            "Content-Type" : "application/json",

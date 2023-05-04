@@ -27,7 +27,7 @@ const Editblog = () => {
 
 
   async function fetchdata (id) {
-    let res = await fetch(process.env.NEXT_PUBLIC_URL+`/getblogs?id=${id}`,{
+    let res = await fetch(`https://jolly-ox-robe.cyclic.app/getblogs?id=${id}`,{
      method : "GET",
      headers :{
        "Content-Type" : "application/json",
@@ -43,7 +43,7 @@ const Editblog = () => {
     e.preventDefault();
     setLoading(true);
     const {id} = router.query;
-    let req = await fetch(process.env.NEXT_PUBLIC_URL+`/editblog?id=${id}`,{
+    let req = await fetch(`https://jolly-ox-robe.cyclic.app/editblog?id=${id}`,{
       method : "POST",
       headers : {
         "Content-Type" : "application/json",

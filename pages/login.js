@@ -19,7 +19,7 @@ const change = (e) =>{
 const submitForm = async (e) =>{
     e.preventDefault();
     setLoading(true);
-    const res = await fetch(process.env.NEXT_PUBLIC_URL+'/Login', {
+    const res = await fetch("https://jolly-ox-robe.cyclic.app/Login", {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -111,23 +111,4 @@ const submitForm = async (e) =>{
         </>
   )
 }
-
-// export async function getStaticProps({context}) {
-//   console.log(context);
-//     const rawResponse = await fetch(process.env.NEXT_PUBLIC_URL+'/login', {
-//       method: 'POST',
-//       headers: {
-//         'Accept': 'application/json',
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify({email:"dsaadas",password:"dsadasd"})
-//     });
-//     const posts = await rawResponse.json();
-//     console.log(posts);
-//   return {
-//     props: {
-//       posts,
-//     },
-//   }
-// }
 export default Login

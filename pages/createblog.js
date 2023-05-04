@@ -18,7 +18,7 @@ const Createblog = () => {
   const submit =  async (e) =>{
     e.preventDefault();
     setLoading(true);
-    let req = await fetch(process.env.NEXT_PUBLIC_URL+"/createblog",{
+    let req = await fetch("https://jolly-ox-robe.cyclic.app/createblog",{
       method : "POST",
       headers : {
         "Content-Type" : "application/json",
