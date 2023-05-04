@@ -18,7 +18,7 @@ const About = () => {
           <div className="flex flex-col-reverse md:flex-row justify-center items-center">
             <div className="aboutContent mx-2 md:mx-5">
               <h1 className='text-3xl md:text-5xl font-bold my-2'>About us</h1>
-              <p>CodeBlog is the ultimate resource for web developers seeking expert guidance and practical solutions to common coding challenges. Our community-powered platform features a vast library of user-generated content, including detailed tutorials, code snippets, and Q&A forums, all aimed at helping developers overcome the toughest obstacles in web development. Whether you're a beginner or an experienced pro, CodeBlog is the go-to destination for finding solutions to complex coding problems. Join our community and take your web development skills to the next level today!</p>
+              <p>CodeBlog is the ultimate resource for web developers seeking expert guidance and practical solutions to common coding challenges. Our community-powered platform features a vast library of user-generated content, including detailed tutorials, code snippets, and Q&A forums, all aimed at helping developers overcome the toughest obstacles in web development. Whether you are a beginner or an experienced pro, CodeBlog is the go-to destination for finding solutions to complex coding problems. Join our community and take your web development skills to the next level today!</p>
               <Link href='/blogs/all'><button className="py-2 px-7 rounded-lg my-3 mx-1 text-lg font-bold  bg-green-600 text-white hover:bg-green-400">Explore</button></Link>
               <div className="links flex my-2 gap-2 items-center transition-transform">
                 <Link href="/">
@@ -55,7 +55,7 @@ const About = () => {
         <div className="mt-5">
           <h2 className="text-xl font-bold mb-4">What kind of problems can Codeblog solve?</h2>
           <p>
-            Codeblog can help you solve a wide range of problems related to web development. Whether you're having issues with frontend technologies like HTML, CSS, or JavaScript, or you're working on a project using the MERN stack, we have solutions that can help.
+            Codeblog can help you solve a wide range of problems related to web development. Whether you are having issues with frontend technologies like HTML, CSS, or JavaScript, or you are working on a project using the MERN stack, we have solutions that can help.
           </p>
         </div>
         <div className="mt-5">
@@ -67,7 +67,7 @@ const About = () => {
         <div className="mt-5">
           <h2 className="text-xl font-bold mb-4">Who is Codeblog for?</h2>
           <p>
-            Codeblog is for web developers of all levels. Whether you're a beginner just starting out or an experienced developer looking to solve a specific problem, our blog posts can help you. We aim to provide solutions that are easy to follow and understand, regardless of your experience level.
+            Codeblog is for web developers of all levels. Whether you are a beginner just starting out or an experienced developer looking to solve a specific problem, our blog posts can help you. We aim to provide solutions that are easy to follow and understand, regardless of your experience level.
           </p>
         </div>
         </div>

@@ -109,7 +109,7 @@ export async function getStaticPaths() {
       { params: { blogs: 'coding' } },
       { params: { blogs: 'web-development' } },
       { params: { blogs: 'front-end' } },
-      { params: { blogs: 'backend-end' } }
+      { params: { blogs: 'backend-end' } } 
     ],
     fallback: true,
   };
